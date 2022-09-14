@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
+    "@angular/cdk": "^14.2.1",
+    "@angular/core": "^14.2.1",
+    "@angular/material": "^14.2.1",
+    "@angular/platform-browser-dynamic": "^14.2.1",
     "@ionic/react": "^5.5.0",
     "@ionic/react-router": "^5.5.0",
     "@testing-library/jest-dom": "^5.11.9",
