@@ -1,0 +1,12 @@
+<ion-content padding>
+    <ion-spinner *ngIf='is_loading'></ion-spinner>
+    <ion-label *ngIf='!is_loading'>
+        {{ 'pages.pending-payout.potential' | translate }}: {{ author }} {{ local }} {{ 'in' | translate }} {{ cashout }}
+    </ion-label>
+    <ion-label *ngIf='!boolean && !is_loading && beneficiaries.length>0'>
+        {{ 'pages.pending-payout.beneficiares' | translate }}
+    </ion-label>
+    <ul *ngFor='let beneficiary of beneficiaries'>
+        <li>{{ beneficiary.account }} ({{ beneficiary.weight }}%) </li>
+    </ul>
+</ion-content>
