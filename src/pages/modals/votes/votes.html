@@ -1,0 +1,31 @@
+<ion-header [class]="chosenTheme">
+    <ion-navbar color="primary" id="header" hideBackButton>
+        <ion-buttons>
+            <button ion-button (tap)="dismiss()">
+                <ion-icon class="custom-close" name="close"></ion-icon>
+            </button>
+        </ion-buttons>
+        <ion-title>{{ 'modals.votes.page_title' | translate }}</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content [class]="chosenTheme">
+    <ion-spinner *ngIf="is_loading"></ion-spinner>
+
+    <no-data *ngIf="no_content == true" icon="thumbs-up" title="{{ 'modals.votes.no_votes' | translate }}">
+    </no-data>
+    <ion-list no-lines id="voters-list">
+        <ion-item *ngFor="let voter of votes | slice:0:slice;" no-lines>
+            <ion-avatar item-start tappable (click)="openProfile(voter.voter)">
+                <img [src]="voter.profile_image" (error)="util.imgError('profile',$event)" />
+            </ion-avatar>
+            <h2 tappable (click)="openProfile(voter.voter)">{{ voter.voter }}</h2>
+
+            <ion-note item-end> ${{ voter.value }} &nbsp; | &nbsp; {{ voter.percent }}%</ion-note>
+        </ion-item>
+    </ion-list>
+
+    <ion-infinite-scroll *ngIf="is_more == true" (ionInfinite)="load_more($event)">
+        <ion-infinite-scroll-content></ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+</ion-content>
