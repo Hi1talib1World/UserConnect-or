@@ -1,0 +1,35 @@
+wallet-item {
+
+  .card {
+    -webkit-box-shadow:  none !important;
+    -moz-box-shadow:  none !important;
+    box-shadow: none !important;
+    border-radius: 8px;
+  }
+
+  .chip-md > ion-icon {
+    color: #fff;
+    background-color: transparent !important;
+    margin-top: -1px;
+  }
+
+  .chip {
+    background: #488aff !important;
+  }
+
+  .custom-padding {
+    padding: 0 16px 16px 16px;
+  }
+
+  .item-md ion-avatar ion-img, .item-md ion-avatar img {
+    background-size: 25% !important;
+    background-position: 50% 50%;
+  }
+
+  .coin-name {
+    color: black !important;
+    font-weight: bold;
+
+  }
+
+}
