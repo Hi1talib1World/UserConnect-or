@@ -1,5 +1,11 @@
 {
   "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "declaration": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "downlevelIteration": true,
     "target": "es5",
     "lib": [
       "dom",
@@ -9,18 +15,27 @@
       "es2016"
     ],
     "allowJs": true,
-    "skipLibCheck": true,
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
-    "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "module": "es2015",
+    "paths": {
+      "providers/*": ["./src/providers/*"],
+      "models/*": ["./src/models/*"]
+    },
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "stripInternal": true,
+    "noImplicitAny": false,
+    "typeRoots": [
+      "../node_modules/@types"
+    ]
   },
   "include": [
     "src/**/*.ts"
