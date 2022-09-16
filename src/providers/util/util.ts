@@ -3,12 +3,7 @@ import { Storage } from '@ionic/storage';
 import { IMG_SERVER, NO_IMAGE_COMMENT, NO_IMAGE_POST } from '../../constants/constants';
 import moment from 'moment';
 
-/**
- * Utility Class
- * @author Jayser Mendez
- * @version 0.0.1
- * @class UtilProvider
- */
+
 
 @Injectable()
 export class UtilProvider {
