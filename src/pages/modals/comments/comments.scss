@@ -1,0 +1,79 @@
+page-comments {
+
+  .title.title-md, .title.title-wp {
+    position: absolute !important;
+    left: 50% !important;
+    top: 0 !important;
+    transform: translateX(-50%) !important;
+    height: 100% !important;
+    width: 70% !important;
+    text-align: center !important;
+  }
+
+  ion-content {
+    background-color: white !important;
+  }
+
+  ion-footer {
+    border-top: 1px solid #d8d8d8;
+    background-color: white;
+  }
+
+  .card {
+    border-top: none !important;
+    border-bottom: none !important;
+  }
+
+  /* allows the bar-footer to be elastic /*
+  /* optionally set a max-height */
+  /* maxlength on the textarea will prevent /*
+  /* it from getting too large also */
+  .bar-footer {
+    overflow: visible !important;
+  }
+
+  .bar-footer textarea {
+    resize: none;
+    height: 25px;
+  }
+
+  /* fixes an ios bug bear */
+  button.ion-android-send {
+    padding-top: 2px;
+  }
+
+  .footer-btn {
+    font-size: x-large;
+  }
+
+  .message-wrapper {
+    position: relative;
+  }
+
+  .message-wrapper:last-child {
+    margin-bottom: 10px;
+  }
+
+  .noResults {
+    height: 100% !important;
+    justify-content: center !important;
+
+    p {
+      font-size: 1.2em !important;
+    }
+  }
+
+  .notFound {
+    font-size: 7.5em !important;
+    color: gainsboro !important;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  .pad {
+    padding: 0 !important;
+  }
+
+}
