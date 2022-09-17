@@ -1,0 +1,275 @@
+page-post-single {
+
+  .button-clear-md {
+    color: white !important;
+  }
+
+  .voters_image {
+    display:inline-block;
+
+    img {
+      height: 25px !important;
+      width: 25px !important;
+      border-radius: 50%;
+      background-position: 50% 50%;
+      border-radius: 50%;
+      border: 1.5px solid white;
+      object-fit: cover;
+    }
+  }
+
+  .voters_image:not(:first-of-type) {
+    margin-left: -6px;
+  }
+
+  .voters {
+    float: left;
+    padding: 5px;
+  }
+
+  .likes {
+    float: left;
+    padding: 10px 10px 10px 0;
+
+    p {
+      font-weight: 500;
+      font-size: 12px;
+    }
+  }
+
+  #comment-icon {
+    color: gray;
+  }
+
+  .info {
+    color: gray;
+  }
+
+  ion-spinner {
+    top: 0 !important;
+  }
+
+  ion-badge {
+    text-transform: lowercase !important;
+  }
+
+  ion-card-content img {
+    display: block;
+    width: auto !important;
+  }
+
+  .card {
+    border-top: 1px solid #e9e7e7;
+    border-bottom: 1px solid #e9e7e7;
+    width: 100% !important;
+    margin: 0 0 10px 0;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+  }
+
+  // Resolve width for general tablets
+  @media only screen and (device-width: 768px) {
+    .scroll-content {
+      width: 75% !important;
+      margin-left: auto;
+      margin-right: auto;;
+    }
+
+    .card {
+      border-radius: 5px;
+      border: 1px solid #e9e7e7;
+    }
+
+    .card:first-child {
+      margin: 15px 0 0 0 !important;
+    }
+  }
+
+  // Resolve width for Ipad Pro
+  @media only screen
+  and (min-device-width : 1024px)
+  and (max-device-width : 1366px) {
+
+    .scroll-content {
+      width: 75% !important;
+      margin-left: auto;
+      margin-right: auto;;
+    }
+
+    .card {
+      border-radius: 5px;
+      border: 1px solid #e9e7e7;
+    }
+
+    .card:first-child {
+      margin: 15px 0 0 0 !important;
+    }
+  }
+
+  code {
+    overflow-x:scroll !important;
+  }
+
+  pre {
+    background-color: #e8e8e8;
+    padding: 13px;
+    overflow-x: scroll !important;
+  }
+
+  // .card:first-child {
+  //     margin: 0 !important;
+  // }
+
+  ion-card-header {
+    display: inline !important;
+  }
+
+  .title {
+    margin: 2px 0 -14px 0 !important;
+    font-size: 2.0rem !important;
+    font-weight: 500 !important;
+    color: #222;
+  }
+
+  #content {
+    p {
+      padding: 5px 0 5px 0;
+    }
+    h1, h2, h3, h4, h5, h6, em {
+      font-weight: bold;
+      padding: 5px 0 5px 0;
+    }
+
+    h2 {
+      font-weight: bold;
+      font-size: 2.2rem;
+    }
+
+    h4 {
+      font-weight: bold;
+      font-size: 1.8rem;
+    }
+
+    h3 {
+      font-weight: bold;
+      font-size: 1.8rem;
+    }
+
+  }
+
+  blockquote {
+    background: #f9f9f9;
+    border-left: 3px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+  }
+
+  blockquote:before {
+    color: #ccc;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+  }
+
+  blockquote p {
+    display: inline;
+  }
+
+  button[ion-fab] {
+    overflow: visible;
+    position: relative;
+    contain: layout;
+
+    ion-label {
+      position: absolute;
+      top: -8px;
+      right: 40px;
+
+      color: white;
+      background-color: rgba(0,0,0,0.7);
+      line-height: 24px;
+      padding: 4px 8px;
+      border-radius: 4px;
+    }
+  }
+
+  .message-wrapper {
+    position: relative;
+  }
+
+  .message-wrapper:first-child {
+    margin-top: 6vh !important;
+  }
+
+  .message-wrapper:last-child {
+    margin-bottom: 10px;
+  }
+
+  ion-avatar img {
+    object-fit: cover;
+    position: relative;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+  }
+
+  .custom-chip {
+    padding: 8px;
+    text-transform: capitalize;
+  }
+
+  .cancel-bottom-pd {
+    padding-bottom: 0px !important;
+  }
+
+  .cancel-top-pd {
+    margin-top: -32px !important;
+  }
+
+  ion-textarea {
+    border: 1px solid #e9e7e7;
+  }
+
+  .pull-right {
+    float: right;
+  }
+
+  .top-33 {
+    margin-top: 33px;
+  }
+
+  thead {
+    background-color: #f1f1f1;
+  }
+
+  table {
+    border-collapse: collapse;
+  }
+
+  tr {
+    border: 1px solid #f1f1f1;
+  }
+
+  tr:first-child {
+    border-top: none;
+  }
+
+  tr:last-child {
+    border-bottom: none;
+  }
+
+  .h3-custom {
+    font-size: 2.2rem !important;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  .pad {
+    padding: 0 !important;
+  }
+
+
+
+}
