@@ -1,0 +1,96 @@
+<ion-header no-border [class]="chosenTheme">
+    <ion-navbar color="primary" id="header">
+        <ion-title>
+            {{ 'modals.edit_post.page_title' | translate }}
+        </ion-title>
+        <ion-buttons end>
+            <button ion-button (click)="post()">
+                {{ 'generic_messages.submit' | translate }}
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+<ion-content no-bounce padding [class]="chosenTheme">
+    <p *ngIf="is_preview == true" text-center>{{ 'generic_messages.preview_mode' | translate }}</p>
+    <div *ngIf="is_preview == true" [innerHtml]="markdowntext"></div>
+    <form *ngIf="is_preview == false" [formGroup]="storyForm">
+        <ion-item no-lines>
+            <ion-label class="label-title" color="primary" stacked>
+                <ion-badge color="primary">{{ 'generic_messages.title' | translate }}</ion-badge>
+            </ion-label>
+            <ion-textarea type="text" rows="1" (keydown.enter)="preventEnter($event)" (input)="adjustTextarea($event);" placeholder="{{ 'generic_messages.title_post' | translate }}"
+                          maxlength="100" [formControl]="storyForm.controls['title']"></ion-textarea>
+        </ion-item>
+        <hr />
+        <ion-item no-lines>
+            <ion-label class="label-title" color="primary" stacked>
+                <ion-badge color="primary">{{ 'generic_messages.description' | translate }}</ion-badge>
+            </ion-label>
+            <ion-textarea #myInput *ngIf="is_preview == false" (click)="getCaretPos(myInput)" (keyup)="getCaretPos(myInput)" type="text"
+                          rows="15" placeholder="{{ 'generic_messages.post_placeholder' | translate }}" [formControl]="storyForm.controls['description']"></ion-textarea>
+        </ion-item>
+        <hr />
+        <ion-item no-lines>
+            <ion-label class="label-title" color="primary" stacked>
+                <ion-badge color="primary">{{ 'generic_messages.tags' | translate }}</ion-badge>
+                <ion-badge color="gray">{{ 'generic_messages.separated_by' | translate }}</ion-badge>
+            </ion-label>
+            <ion-textarea type="text" rows="1" (keydown.enter)="preventEnter($event)" (input)="adjustTextarea($event);" placeholder="{{ 'generic_messages.title_tags' | translate }}"
+                          [formControl]="storyForm.controls['tags']"></ion-textarea>
+        </ion-item>
+        <hr />
+    </form>
+</ion-content>
+
+<ion-footer [class]="chosenTheme">
+    <ion-grid class="top-four">
+        <ion-row>
+            <ion-col tappable (click)="insertText('**bold**')" (mousedown)="preventFocusChange($event)">
+                <a class="button button-small">
+                    <i class="fa fa-bold"></i>
+                </a>
+            </ion-col>
+            <ion-col tappable (click)="insertText('*italic*')" (mousedown)="preventFocusChange($event)">
+                <a class="button button-small">
+                    <i class="fa fa-italic"></i>
+                </a>
+            </ion-col>
+            <ion-col tappable (click)="insertText('# header')" (mousedown)="preventFocusChange($event)">
+                <a class="button button-small">
+                    <i class="fa fa-header"></i>
+                </a>
+            </ion-col>
+            <ion-col tappable (click)="insertText('> quote')" (mousedown)="preventFocusChange($event)">
+                <a class="button button-small">
+                    <i class="fa fa-quote-right"></i>
+                </a>
+            </ion-col>
+            <ion-col (mousedown)="preventFocusChange($event)">
+                <a class="button button-small">
+                    <i class='fa fa-list'></i>
+                </a>
+            </ion-col>
+            <ion-col (mousedown)="preventFocusChange($event)">
+                <a class="button button-small">
+                    <i class='fa fa-list-ol'></i>
+                </a>
+            </ion-col>
+            <ion-col (mousedown)="preventFocusChange($event)">
+                <a class="button button-small">
+                    <i class='fa fa-link'></i>
+                </a>
+            </ion-col>
+            <ion-col (mousedown)="preventFocusChange($event)" tappable (click)="presentActionSheet()">
+                <a class="button button-small">
+                    <i class='fa fa-picture-o'></i>
+                </a>
+            </ion-col>
+            <ion-col (mousedown)="preventFocusChange($event)" tappable (click)="showPreview()">
+                <a class="button button-small">
+                    <i class='fa fa-eye'></i>
+                </a>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-footer>
