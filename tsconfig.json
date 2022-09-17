@@ -24,11 +24,7 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "module": "es2015",
-    "paths": {
-      "providers/*": ["./src/providers/*"],
-      "models/*": ["./src/models/*"]
-    },
+    "module": "esnext",
     "sourceMap": true,
     "skipLibCheck": true,
     "stripInternal": true,
