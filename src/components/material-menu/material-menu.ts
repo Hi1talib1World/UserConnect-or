@@ -1,5 +1,5 @@
 import { Component, Input, SimpleChange, OnInit } from '@angular/core';
-import { UtilProvider } from 'providers/util/util';
+import { UtilProvider } from '../../providers/util/util';
 
 @Component({
     selector: 'material-menu',
