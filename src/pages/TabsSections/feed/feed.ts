@@ -1,10 +1,10 @@
-import { UtilProvider } from 'providers/util/util';
+import { UtilProvider } from '../../../providers/util/util';
 import { Component, NgZone, ChangeDetectorRef, ChangeDetectionStrategy } from '@angular/core';
 import { IonicPage, App, VirtualScroll } from 'ionic-angular';
-import { PostsRes } from 'models/models';
-import { SteemConnectProvider } from 'providers/steemconnect/steemconnect';
+import { PostsRes } from '../../../models/models';
+import { SteemConnectProvider } from '../../../providers/steemconnect/steemconnect';
 import { feedTemplate } from './feed.template';
-import { SteemiaProvider } from 'providers/steemia/steemia';
+import { SteemiaProvider } from '../../../providers/steemia/steemia';
 
 @IonicPage({
     priority: 'high'
