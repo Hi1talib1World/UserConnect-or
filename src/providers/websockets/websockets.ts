@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { $WebSocket } from 'angular2-websocket/angular2-websocket';
 import { BehaviorSubject } from 'rxjs/BehaviorSubject';
-import { SteemConnectProvider } from 'providers/steemconnect/steemconnect';
+import { SteemConnectProvider } from '../steemconnect/steemconnect';
 import { LocalNotifications } from '@ionic-native/local-notifications';
 
 /**
