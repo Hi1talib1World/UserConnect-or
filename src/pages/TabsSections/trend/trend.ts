@@ -1,10 +1,10 @@
 import { Component, NgZone, ChangeDetectorRef } from '@angular/core';
 import { IonicPage, App } from 'ionic-angular';
-import { PostsRes } from 'models/models';
+import { PostsRes } from '../../../models/models';
 import { trendTemplate } from './trend.template';
-import { SteemiaProvider } from 'providers/steemia/steemia';
-import { SteemConnectProvider } from 'providers/steemconnect/steemconnect';
-import { SharedServiceProvider } from 'providers/shared-service/shared-service';
+import { SteemiaProvider } from '../../../providers/steemia/steemia';
+import { SteemConnectProvider } from '../../../providers/steemconnect/steemconnect';
+import { SharedServiceProvider } from '../../../providers/shared-service/shared-service';
 
 @IonicPage({
     priority: 'high'
