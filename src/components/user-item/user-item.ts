@@ -1,9 +1,9 @@
 import { Component, Input } from '@angular/core';
-import { UtilProvider } from 'providers/util/util';
-import { SteeemActionsProvider } from 'providers/steeem-actions/steeem-actions';
+import { UtilProvider } from '../../providers/util/util';
+import { SteeemActionsProvider } from '../../providers/steeem-actions/steeem-actions';
 import { App, NavController } from 'ionic-angular';
-import { AlertsProvider } from 'providers/alerts/alerts';
-import { SteemConnectProvider } from 'providers/steemconnect/steemconnect';
+import { AlertsProvider } from '../../providers/alerts/alerts';
+import { SteemConnectProvider } from '../../providers/steemconnect/steemconnect';
 
 /**
  * Class for user item
