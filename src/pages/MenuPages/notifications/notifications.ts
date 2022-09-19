@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, MenuController, LoadingController } from 'ionic-angular';
-import { WebsocketsProvider } from 'providers/websockets/websockets';
-import { UtilProvider } from 'providers/util/util';
-import { SteemConnectProvider } from 'providers/steemconnect/steemconnect';
-import { SteemiaProvider } from 'providers/steemia/steemia';
+import { WebsocketsProvider } from '../../../providers/websockets/websockets';
+import { UtilProvider } from '../../../providers/util/util';
+import { SteemConnectProvider } from '../../../providers/steemconnect/steemconnect';
+import { SteemiaProvider } from '../../../providers/steemia/steemia';
 
 @IonicPage()
 @Component({
