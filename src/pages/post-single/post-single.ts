@@ -4,21 +4,21 @@ import {
     ActionSheetController, MenuController, ToastController, AlertController,
     PopoverController, ModalController, Events
 } from 'ionic-angular';
-import { PostsRes } from 'models/models';
+import { PostsRes } from '../../models/models';
 import { postSinglePage } from './post-single.template';
 import { AuthorProfilePage } from '../../pages/author-profile/author-profile';
-import { SteemiaProvider } from 'providers/steemia/steemia';
-import { SteeemActionsProvider } from 'providers/steeem-actions/steeem-actions';
-import { SteemConnectProvider } from 'providers/steemconnect/steemconnect';
+import { SteemiaProvider } from '../../providers/steemia/steemia';
+import { SteeemActionsProvider } from '../../providers/steeem-actions/steeem-actions';
+import { SteemConnectProvider } from '../../providers/steemconnect/steemconnect';
 import { Subject } from 'rxjs/Subject';
-import { AlertsProvider } from 'providers/alerts/alerts';
+import { AlertsProvider } from '../../providers/alerts/alerts';
 import { ERRORS } from '../../constants/constants';
-import { UtilProvider } from 'providers/util/util';
+import { UtilProvider } from '../../providers/util/util';
 import { Storage } from '@ionic/storage';
-import { CameraProvider } from 'providers/camera/camera';
+import { CameraProvider } from '../../providers/camera/camera';
 import { DomSanitizer } from '@angular/platform-browser';
 import { TranslateService } from '@ngx-translate/core';
-import { SharedServiceProvider } from 'providers/shared-service/shared-service';
+import { SharedServiceProvider } from '../../providers/shared-service/shared-service';
 import { Subscription } from 'rxjs/Subscription';
 import { ImageViewerController } from 'ionic-img-viewer';
 import { TextToSpeech } from '@ionic-native/text-to-speech';
