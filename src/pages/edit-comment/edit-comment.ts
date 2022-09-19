@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, ViewController, NavParams, LoadingController, MenuController } from 'ionic-angular';
-import { SteeemActionsProvider } from 'providers/steeem-actions/steeem-actions';
-import { AlertsProvider } from 'providers/alerts/alerts';
+import { SteeemActionsProvider } from '../../providers/steeem-actions/steeem-actions';
+import { AlertsProvider } from '../../providers/alerts/alerts';
 import { Subscription } from 'rxjs';
-import { SettingsProvider } from 'providers/settings/settings';
+import { SettingsProvider } from '../../providers/settings/settings';
 import { TranslateService } from '@ngx-translate/core';
 
 
