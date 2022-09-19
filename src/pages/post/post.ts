@@ -6,9 +6,9 @@ import {
 import marked from 'marked';
 import { Storage } from '@ionic/storage';
 import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
-import { SteeemActionsProvider } from 'providers/steeem-actions/steeem-actions';
-import { AlertsProvider } from 'providers/alerts/alerts';
-import { CameraProvider } from 'providers/camera/camera';
+import { SteeemActionsProvider } from '../../providers/steeem-actions/steeem-actions';
+import { AlertsProvider } from '../../providers/alerts/alerts';
+import { CameraProvider } from '../../providers/camera/camera';
 import { TranslateService } from '@ngx-translate/core';
 
 @IonicPage()
