@@ -6,10 +6,10 @@ import { App,
     LoadingController,
     MenuController } from 'ionic-angular';
 import { Storage } from '@ionic/storage';
-import { PostsRes } from 'models/models';
-import { UtilProvider } from 'providers/util/util';
-import { SteemiaProvider } from 'providers/steemia/steemia';
-import { SteemConnectProvider } from 'providers/steemconnect/steemconnect';
+import { PostsRes } from '../../../models/models';
+import { UtilProvider } from '../../../providers/util/util';
+import { SteemiaProvider } from '../../../providers/steemia/steemia';
+import { SteemConnectProvider } from '../../../providers/steemconnect/steemconnect';
 
 @IonicPage()
 @Component({
