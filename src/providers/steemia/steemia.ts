@@ -1,6 +1,6 @@
 import { HttpClient, HttpInterceptor } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Query, PostsRes } from 'models/models';
+import { Query, PostsRes } from '../../models/models';
 import {
     STEEM_API,
     STEEMIA_POSTS,
