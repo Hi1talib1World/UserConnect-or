@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { CryptoProvider } from 'providers/crypto-api/crypto-api'
+import { CryptoProvider } from '../../providers/crypto-api/crypto-api'
 import { Storage } from '@ionic/storage';
 import moment from 'moment';
 import { TranslateService } from '@ngx-translate/core';
