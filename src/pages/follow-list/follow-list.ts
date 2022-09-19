@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { App, IonicPage, NavController, NavParams, MenuController } from 'ionic-angular';
-import { SteemiaProvider } from 'providers/steemia/steemia';
-import { UtilProvider } from 'providers/util/util';
-import { SteemConnectProvider } from 'providers/steemconnect/steemconnect';
+import { SteemiaProvider } from '../../providers/steemia/steemia';
+import { UtilProvider } from '../../providers/util/util';
+import { SteemConnectProvider } from '../../providers/steemconnect/steemconnect';
 
 /**
  * Following/followers page
