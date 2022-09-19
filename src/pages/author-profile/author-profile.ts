@@ -1,14 +1,14 @@
-import { UtilProvider } from 'providers/util/util';
+import { UtilProvider } from '../../providers/util/util';
 import { Component, NgZone, ChangeDetectorRef } from '@angular/core';
 import { IonicPage, NavController, NavParams, LoadingController, MenuController } from 'ionic-angular';
-import { PostsRes } from 'models/models';
-import { SteemiaProvider } from 'providers/steemia/steemia';
-import { SteemConnectProvider } from 'providers/steemconnect/steemconnect';
-import { SteeemActionsProvider } from 'providers/steeem-actions/steeem-actions';
-import { AlertsProvider } from 'providers/alerts/alerts';
-import { SettingsProvider } from 'providers/settings/settings';
+import { PostsRes } from '../../models/models';
+import { SteemiaProvider } from '../../providers/steemia/steemia';
+import { SteemConnectProvider } from '../../providers/steemconnect/steemconnect';
+import { SteeemActionsProvider } from '../../providers/steeem-actions/steeem-actions';
+import { AlertsProvider } from '../../providers/alerts/alerts';
+import { SettingsProvider } from '../../providers/settings/settings';
 import { Subscription } from 'rxjs';
-import { SharedServiceProvider } from 'providers/shared-service/shared-service';
+import { SharedServiceProvider } from '../../providers/shared-service/shared-service';
 
 @IonicPage({
     priority: 'high'
