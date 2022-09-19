@@ -1,9 +1,9 @@
 import { Component, ViewChild, ChangeDetectorRef } from '@angular/core';
 import { IonicPage, App, Tabs, Tab, NavController } from 'ionic-angular';
-import { WebsocketsProvider } from 'providers/websockets/websockets';
-import { SteemConnectProvider } from 'providers/steemconnect/steemconnect';
-import { AlertsProvider } from 'providers/alerts/alerts';
-import { SharedServiceProvider } from 'providers/shared-service/shared-service';
+import { WebsocketsProvider } from '../../providers/websockets/websockets';
+import { SteemConnectProvider } from '../../providers/steemconnect/steemconnect';
+import { AlertsProvider } from '../../providers/alerts/alerts';
+import { SharedServiceProvider } from '../../providers/shared-service/shared-service';
 
 @IonicPage({
     priority: 'high'
