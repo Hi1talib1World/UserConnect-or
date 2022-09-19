@@ -12,10 +12,10 @@ import {
 } from 'ionic-angular';
 import marked from 'marked';
 import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
-import { SteeemActionsProvider } from 'providers/steeem-actions/steeem-actions';
-import { AlertsProvider } from 'providers/alerts/alerts';
-import { CameraProvider } from 'providers/camera/camera';
-import { SettingsProvider } from 'providers/settings/settings';
+import { SteeemActionsProvider } from '../../providers/steeem-actions/steeem-actions';
+import { AlertsProvider } from '../../providers/alerts/alerts';
+import { CameraProvider } from '../../providers/camera/camera';
+import { SettingsProvider } from '../../providers/settings/settings';
 import { Subscription } from 'rxjs/Subscription';
 import { TranslateService } from '@ngx-translate/core';
 
