@@ -1,11 +1,11 @@
-import { UtilProvider } from 'providers/util/util';
+import { UtilProvider } from '../../../providers/util/util';
 import { Component } from '@angular/core';
 import { IonicPage, ToastController, NavParams, AlertController, MenuController, Platform } from 'ionic-angular';
-import { SettingsProvider } from 'providers/settings/settings';
+import { SettingsProvider } from '../../../providers/settings/settings';
 import { StatusBar } from '@ionic-native/status-bar';
 import { Storage } from '@ionic/storage';
 import { TranslateService } from '@ngx-translate/core';
-import { SharedServiceProvider } from 'providers/shared-service/shared-service';
+import { SharedServiceProvider } from '../../../providers/shared-service/shared-service';
 
 @IonicPage()
 @Component({
