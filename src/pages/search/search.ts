@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, MenuController } from 'ionic-angular';
 import { Subject } from 'rxjs/Subject';
-import { SteemiaProvider } from 'providers/steemia/steemia';
+import { SteemiaProvider } from '../../providers/steemia/steemia';
 import { Subscription } from 'rxjs/Subscription';
 
 /**
