@@ -1,8 +1,8 @@
-import { UtilProvider } from 'providers/util/util';
-import { SteemiaProvider } from 'providers/steemia/steemia';
+import { UtilProvider } from '../../providers/util/util';
+import { SteemiaProvider } from '../../providers/steemia/steemia';
 import { BrowserTab } from '@ionic-native/browser-tab';
 import { Component, Input } from '@angular/core';
-import { SettingsProvider } from 'providers/settings/settings';
+import { SettingsProvider } from '../../providers/settings/settings';
 import { Subscription } from 'rxjs';
 import { IonicPage,
     NavController,
