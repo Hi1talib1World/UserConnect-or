@@ -3,18 +3,18 @@ import {
     IonicPage, App, ViewController, NavParams, ActionSheetController, NavController,
     ModalController, LoadingController, MenuController, AlertController, Events
 } from 'ionic-angular';
-import { PostsRes } from 'models/models';
-import { SteemiaProvider } from 'providers/steemia/steemia';
-import { SteeemActionsProvider } from 'providers/steeem-actions/steeem-actions';
-import { SteemConnectProvider } from 'providers/steemconnect/steemconnect';
+import { PostsRes } from '../../../models/models';
+import { SteemiaProvider } from '../../../providers/steemia/steemia';
+import { SteeemActionsProvider } from '../../../providers/steeem-actions/steeem-actions';
+import { SteemConnectProvider } from '../../../providers/steemconnect/steemconnect';
 import { Subject } from 'rxjs/Subject';
-import { AlertsProvider } from 'providers/alerts/alerts';
+import { AlertsProvider } from '../../../providers/alerts/alerts';
 import { ERRORS } from '../../../constants/constants';
-import { CameraProvider } from 'providers/camera/camera';
+import { CameraProvider } from '../../../providers/camera/camera';
 import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
-import { SettingsProvider } from 'providers/settings/settings';
+import { SettingsProvider } from '../../../providers/settings/settings';
 import { Subscription } from 'rxjs/Subscription';
-import { SharedServiceProvider } from 'providers/shared-service/shared-service';
+import { SharedServiceProvider } from '../../../providers/shared-service/shared-service';
 import { TranslateService } from '@ngx-translate/core';
 
 @IonicPage({
