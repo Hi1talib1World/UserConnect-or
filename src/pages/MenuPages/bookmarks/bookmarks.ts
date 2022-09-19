@@ -5,9 +5,9 @@ import { IonicPage,
     LoadingController,
     MenuController } from 'ionic-angular';
 import { Storage } from '@ionic/storage';
-import { PostsRes } from 'models/models';
-import { UtilProvider } from 'providers/util/util';
-import { SteemiaProvider } from 'providers/steemia/steemia';
+import { PostsRes } from '../../../models/models';
+import { UtilProvider } from '../../../providers/util/util';
+import { SteemiaProvider } from '../../../providers/steemia/steemia';
 import { TranslateService } from "@ngx-translate/core";
 
 
