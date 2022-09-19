@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, ViewController, NavParams } from 'ionic-angular';
-import { SettingsProvider } from 'providers/settings/settings';
+import { SettingsProvider } from '../../providers/settings/settings';
 import { Subscription } from 'rxjs/Subscription';
 
 @IonicPage()
