@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, MenuController } from 'ionic-angular';
-import { SteemiaProvider } from 'providers/steemia/steemia';
-import { SharedServiceProvider } from 'providers/shared-service/shared-service';
+import { SteemiaProvider } from '../../providers/steemia/steemia';
+import { SharedServiceProvider } from '../../providers/shared-service/shared-service';
 import 'rxjs/add/operator/debounceTime';
 import 'rxjs/add/operator/map';
 
