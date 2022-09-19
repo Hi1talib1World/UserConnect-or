@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 import { ThemeableBrowser, ThemeableBrowserObject } from '@ionic-native/themeable-browser';
-import { SettingsProvider } from 'providers/settings/settings';
+import { SettingsProvider } from '../settings/settings';
 import { Clipboard } from '@ionic-native/clipboard';
 import { SocialSharing } from '@ionic-native/social-sharing';
 import { Observable } from 'rxjs/Observable';
