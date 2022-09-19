@@ -7,13 +7,13 @@ import { App,
     ToastController,
     PopoverController,
     ModalController } from 'ionic-angular';
-import { SteeemActionsProvider } from 'providers/steeem-actions/steeem-actions';
-import { SteemiaProvider } from 'providers/steemia/steemia';
-import { UtilProvider } from 'providers/util/util';
+import { SteeemActionsProvider } from '../../providers/steeem-actions/steeem-actions';
+import { SteemiaProvider } from '../../providers/steemia/steemia';
+import { UtilProvider } from '../../providers/util/util';
 import { Clipboard } from '@ionic-native/clipboard';
-import { SteemConnectProvider } from 'providers/steemconnect/steemconnect';
-import { AlertsProvider } from 'providers/alerts/alerts';
-import { SharedServiceProvider } from 'providers/shared-service/shared-service';
+import { SteemConnectProvider } from '../../providers/steemconnect/steemconnect';
+import { AlertsProvider } from '../../providers/alerts/alerts';
+import { SharedServiceProvider } from '../../providers/shared-service/shared-service';
 import { TranslateService } from '@ngx-translate/core';
 
 /**
