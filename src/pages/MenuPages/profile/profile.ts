@@ -5,14 +5,14 @@ import { IonicPage,
     LoadingController,
     ModalController,
     MenuController } from 'ionic-angular';
-import { PostsRes } from 'models/models';
-import { SteemiaProvider } from 'providers/steemia/steemia';
-import { SteemConnectProvider } from 'providers/steemconnect/steemconnect';
-import { SteeemActionsProvider } from 'providers/steeem-actions/steeem-actions';
-import { AlertsProvider } from 'providers/alerts/alerts';
+import { PostsRes } from '../../../models/models';
+import { SteemiaProvider } from '../../../providers/steemia/steemia';
+import { SteemConnectProvider } from '../../../providers/steemconnect/steemconnect';
+import { SteeemActionsProvider } from '../../../providers/steeem-actions/steeem-actions';
+import { AlertsProvider } from '../../../providers/alerts/alerts';
 import { TranslateService } from '@ngx-translate/core';
-import { SharedServiceProvider } from 'providers/shared-service/shared-service';
-import { UtilProvider } from 'providers/util/util';
+import { SharedServiceProvider } from '../../../providers/shared-service/shared-service';
+import { UtilProvider } from '../../../providers/util/util';
 
 @IonicPage({
     priority: 'high'
