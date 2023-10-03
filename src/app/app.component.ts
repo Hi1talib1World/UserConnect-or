@@ -35,10 +35,10 @@ export class MyApp implements OnDestroy {
 
     // Rewards Data
     private rewards = {
-        steem: null,
-        sbd: null,
-        vesting_steem: null,
-        vesting_steem_balance: null
+        steem: null as number | null,
+        sbd: null as number | null,
+        vesting_steem: null as number | null,
+        vesting_steem_balance: null as number | null
     };
 
     constructor(private platform: Platform,
