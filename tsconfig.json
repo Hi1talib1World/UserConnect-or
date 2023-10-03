@@ -5,6 +5,7 @@
     "declaration": false,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "strictPropertyInitialization": false,
     "downlevelIteration": true,
     "target": "es5",
     "lib": [
