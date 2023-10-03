@@ -46,6 +46,7 @@
     "@types/react-router": "^5.1.11",
     "@types/react-router-dom": "^5.1.7",
     "angular2-websocket": "^0.9.6",
+    "browserslist": "^4.22.1",
     "com.telerik.plugins.nativepagetransitions": "^0.6.5",
     "cordova-android": "^7.1.0",
     "cordova-browser": "5.0.3",
