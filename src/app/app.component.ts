@@ -2,17 +2,17 @@ import { Component, ViewChild, OnDestroy } from '@angular/core';
 import { Platform, Nav, MenuController, Events } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { SteemConnectProvider } from 'providers/steemconnect/steemconnect';
+import { SteemConnectProvider } from '../providers/steemconnect/steemconnect';
 import { FCM } from '@ionic-native/fcm';
 import { MaterialMenuOptions } from '../components/material-menu/material-menu';
-import { SteemiaProvider } from 'providers/steemia/steemia';
-import { GoogleTrackingProvider } from 'providers/google-tracking/google-tracking';
-import { WebsocketsProvider } from 'providers/websockets/websockets';
+import { SteemiaProvider } from '../providers/steemia/steemia';
+import { GoogleTrackingProvider } from '../providers/google-tracking/google-tracking';
+import { WebsocketsProvider } from '../providers/websockets/websockets';
 import { Storage } from '@ionic/storage';
 import { SettingsProvider } from '../providers/settings/settings';
 import { TranslateService } from '@ngx-translate/core';
-import { SteeemActionsProvider } from 'providers/steeem-actions/steeem-actions';
-import { SharedServiceProvider } from 'providers/shared-service/shared-service';
+import { SteeemActionsProvider } from '../providers/steeem-actions/steeem-actions';
+import { SharedServiceProvider } from '../providers/shared-service/shared-service';
 import { Subscription } from 'rxjs/Subscription';
 
 @Component({
@@ -20,10 +20,10 @@ import { Subscription } from 'rxjs/Subscription';
 })
 export class MyApp implements OnDestroy {
 
-    @ViewChild(Nav) nav: Nav;
+    @ViewChild(Nav) nav!: Nav;
 
     rootPage = 'TabsPage';
-    private isLoggedIn: boolean;
+    private isLoggedIn: boolean= false;
 
     private loggedInPages: MaterialMenuOptions;
     private loggedOutPages: MaterialMenuOptions;
