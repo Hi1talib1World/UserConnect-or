@@ -23,7 +23,7 @@ export class MyApp implements OnDestroy {
     @ViewChild(Nav) nav!: Nav;
 
     rootPage = 'TabsPage';
-    private isLoggedIn: boolean= false;
+    private isLoggedIn: boolean;
 
     private loggedInPages: MaterialMenuOptions;
     private loggedOutPages: MaterialMenuOptions;
