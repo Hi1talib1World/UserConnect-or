@@ -91,7 +91,12 @@ export class MyApp implements OnDestroy {
                     this.ws.sendAsync('get_notifications', this.profile.name, 0);
                     this.storage.get('auto_claim').then(data => {
                         if (data === true) {
-                            if (this.rewards.sbd > 0 || this.rewards.steem > 0 || this.rewards.vesting_steem > 0 || this.rewards.vesting_steem_balance > 0) {
+                            if (
+                                this.rewards?.sbd > 0 ||
+                                this.rewards?.steem > 0 ||
+                                this.rewards?.vesting_steem > 0 ||
+                                this.rewards?.vesting_steem_balance > 0
+                            ) {
                                 this.claim_rewards();
                             }
                         }
