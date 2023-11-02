@@ -137,6 +137,7 @@
   },
   "description": "An Ionic project",
   "devDependencies": {
+    "node": "^16.14.0",
     "source-map": "^0.7.4"
   }
 }
