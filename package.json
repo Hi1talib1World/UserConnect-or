@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@angular/common": "~17.0.1",
+    "@angular/compiler-cli": "^17.0.1",
     "@angular/core": "~17.0.1",
     "@angular/forms": "~17.0.1",
     "@angular/platform-browser": "~17.0.1",
@@ -57,5 +58,8 @@
       "last 1 safari version"
     ]
   },
-  "description": "An Ionic project"
+  "description": "An Ionic project",
+  "main": "karma.conf.js",
+  "author": "",
+  "license": "ISC"
 }
