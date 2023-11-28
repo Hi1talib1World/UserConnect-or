@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-chat',
@@ -7,22 +7,14 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./chat.page.scss'],
 })
 export class ChatPage implements OnInit {
+  user: any; // Adjust the type as per your actual data type
 
-  user: any;
-
-  constructor(
-    private router: Router,
-    private route: ActivatedRoute
-  ) {
-    this.route.queryParams.subscribe(() => {
-      if (this.router.getCurrentNavigation().extras.state) {
-        this.user = this.router.getCurrentNavigation().extras.state.user;
-      }
-    });
-  }
+  constructor(private router: Router) {}
 
   ngOnInit() {
-    // console.log('user****', this.user);
+    const navigation = this.router.getCurrentNavigation();
+    if (navigation && navigation.extras && navigation.extras.state) {
+      this.user = navigation.extras.state.user;
+    }
   }
-
 }
