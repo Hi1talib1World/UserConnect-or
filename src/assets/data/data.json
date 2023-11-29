@@ -3,6 +3,7 @@
     {
       "id":1,
       "name":"Minnie Harvey",
+      "location": "Paris, France",
       "avatar":"https://randomuser.me/api/portraits/women/2.jpg",
       "is_online":true,
       "feed_image":"https://via.placeholder.com/600/d32776",
@@ -20,6 +21,7 @@
     {
       "id":2,
       "name":"Claire Fisher",
+      "location": "Tokyo, Japan",
       "avatar":"https://randomuser.me/api/portraits/women/81.jpg",
       "is_online":true,
       "feed_image":"https://via.placeholder.com/600/524931",
@@ -37,6 +39,7 @@
     {
       "id":3,
       "name":"Brennan Holmes",
+      "location": "New York, USA",
       "avatar":"https://randomuser.me/api/portraits/men/79.jpg",
       "is_online":false,
       "feed_image":"https://via.placeholder.com/600/24f355",
@@ -53,6 +56,7 @@
     {
       "id":4,
       "name":"Cameron Mitchelle",
+      "location": "Dubai, UAE",
       "avatar":"https://randomuser.me/api/portraits/men/27.jpg",
       "is_online":false,
       "feed_image":"https://via.placeholder.com/600/771796",
@@ -69,6 +73,7 @@
     {
       "id":5,
       "name":"Isobel Kim",
+      "location": "Marrakech, Morocco",
       "avatar":"https://randomuser.me/api/portraits/women/92.jpg",
       "is_online":false,
       "feed_image":"https://via.placeholder.com/600/92c952",
@@ -85,6 +90,7 @@
     {
       "id":6,
       "name":"Zoe Stevens",
+      "location": "Madrid, Spain",
       "avatar":"https://randomuser.me/api/portraits/women/17.jpg",
       "is_online":true,
       "feed_image":"https://via.placeholder.com/600/56a8c2",
@@ -101,6 +107,7 @@
     {
       "id":7,
       "name":"Alberto Shaw",
+      "location": "Mecca, KSA",
       "avatar":"https://randomuser.me/api/portraits/men/0.jpg",
       "is_online":false,
       "feed_image":"https://via.placeholder.com/600/b0f7cc",
@@ -117,6 +124,7 @@
     {
       "id":8,
       "name":"Gilbert Bates",
+      "location": "Moscow, Russia",
       "avatar":"https://randomuser.me/api/portraits/men/7.jpg",
       "is_online":true,
       "feed_image":"https://via.placeholder.com/600/1ee8a4",
@@ -133,6 +141,7 @@
     {
       "id":9,
       "name":"Bessie Bryant",
+      "location": "Milano, Italy",
       "avatar":"https://randomuser.me/api/portraits/women/95.jpg",
       "is_online":false,
       "feed_image":"https://via.placeholder.com/600/51aa97",
@@ -149,6 +158,7 @@
     {
       "id":10,
       "name":"Kelly Gomez",
+      "location": "Agadir, Morocco",
       "avatar":"https://randomuser.me/api/portraits/men/61.jpg",
       "is_online":true,
       "feed_image":"https://via.placeholder.com/600/810b14",

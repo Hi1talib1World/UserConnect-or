@@ -1,6 +1,11 @@
 <ion-header translucent>
   <ion-toolbar>
-    <ion-title>Feedsty</ion-title>
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-icon slot="icon-only" src="assets/icon/uc.png" size="small"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>UserConnect | Feed</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -12,7 +17,8 @@
           <img src="{{friend.avatar}}">
         </ion-avatar>
         <ion-label>
-          <h3>{{friend.name}}</h3>
+          <h3><b>{{friend.name}}</b></h3>
+          <h3>{{friend.location}}</h3>
         </ion-label>
         <ion-note slot="end">
           <ion-label>{{friend.last_message.time}}</ion-label>
