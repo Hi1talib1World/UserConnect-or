@@ -1,7 +1,24 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title class="ion-text-center">Sakhamen</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="toggleMenu()">
+        <ion-icon name="ellipsis-horizontal"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">@hichamtalib7</ion-title>
   </ion-toolbar>
+  
+  <ion-menu contentId="main" side="end" menuId="main-menu">
+    <!-- Add your menu content here -->
+    <ion-content>
+      <ion-list>
+        <ion-item (click)="handleMenuOption('Option 1')">Option 1</ion-item>
+        <ion-item (click)="handleMenuOption('Option 2')">Option 2</ion-item>
+        <ion-item (click)="handleMenuOption('Option 3')">Option 3</ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  
 </ion-header>
 
 <ion-content>
@@ -11,11 +28,11 @@
     <ion-row>
       <ion-col>
         <div class="profile__image">
-          <img src="https://avatars3.githubusercontent.com/u/9292544?s=460&u=f9bdace05bcf793e7c701b2c5a7259c70b70e0f5">
+          <img src="https://avatars.githubusercontent.com/u/31773165?v=4">
         </div>
         <div class="ion-text-center">
-          <h4>Sakhamen</h4>
-          <p>I am A Full-Stack JS Developer</p>
+          <h4>Hicham Outaleb</h4>
+          <p>I am A Full-Stack Developer</p>
         </div>
       </ion-col>
     </ion-row>
