@@ -9,16 +9,7 @@ const routes: Routes = [
     children: [
       {
         path: 'inbox',
-        children: [
-          {
-            path: '',
-            loadChildren: () => import('../inbox/inbox.module').then( m => m.InboxPageModule)
-          },
-          {
-            path: ':id',
-            loadChildren: () => import('../chat/chat.module').then( m => m.ChatPageModule)
-          }
-        ]
+        loadChildren: () => import('../search/search.module').then( m => m.SearchPageModule)
       },
       {
         path: 'friends',
