@@ -8,7 +8,7 @@ const routes: Routes = [
     component: TabsPage,
     children: [
       {
-        path: 'inbox',
+        path: 'search',
         loadChildren: () => import('../search/search.module').then( m => m.SearchPageModule)
       },
       {
