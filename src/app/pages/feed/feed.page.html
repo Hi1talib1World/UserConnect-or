@@ -9,8 +9,8 @@
     <ion-title>UserConnect | Feed</ion-title>
   
     <ion-buttons slot="end">
-      <ion-button (click)="openChatPage()">
-        <ion-icon slot="icon-only" name="chatbox"></ion-icon>
+      <ion-button>
+        <ion-icon slot="icon-only" name="chatbox" class="chat"></ion-icon>
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
@@ -33,6 +33,30 @@
         </ion-note>
       </ion-item>
       <img src="{{friend.feed_image}}" [alt]="friend?.name">
+      <ion-grid >
+        <ion-row>
+          <ion-col size="3">
+            <ion-button (click)="likeButtonClicked()" color="light">
+              <ion-icon name="heart"></ion-icon>
+              
+            </ion-button>
+          </ion-col>
+    
+          <ion-col size="3">
+            <ion-button (click)="commentButtonClicked()" color="light">
+              <ion-icon name="chatbubbles"></ion-icon>
+              
+            </ion-button>
+          </ion-col>
+    
+          <ion-col size="3">
+            <ion-button  (click)="shareButtonClicked()" color="light">
+              <ion-icon name="share"></ion-icon>
+              
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
     </ion-card>
   </ion-list>
 </ion-content>
