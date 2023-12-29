@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 
 import { ApiService } from '../../services/api.service';
@@ -15,18 +16,17 @@ export class FeedPage implements OnInit {
 
   constructor(
     private navCtrl: NavController,
-    private apiService: ApiService
+    private apiService: ApiService,
+    private router: Router
   ) { }
 
-  
 
   ngOnInit() {
     this.loadFeed();
   }
 
-  openChatPage() {
-    // Navigate to the chat page
-    this.navCtrl.navigateForward('/chat'); // Adjust the path as needed
+  openInboxPage() {
+    this.router.navigate(['../inbox']);
   }
 
   loadFeed() {
