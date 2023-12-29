@@ -1,25 +1,24 @@
+<ion-menu side="start" contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menu Content</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">This is the menu content.</ion-content>
+</ion-menu>
 <ion-header>
-  <ion-toolbar>
-    <ion-buttons slot="end">
-      <ion-button (click)="toggleMenu()">
-        <ion-icon name="ellipsis-horizontal"></ion-icon>
-      </ion-button>
-    </ion-buttons>
-    <ion-title class="ion-text-center">@hichamtalib7</ion-title>
-  </ion-toolbar>
-  
-  <ion-menu contentId="main" side="end" menuId="main-menu">
-    <!-- Add your menu content here -->
-    <ion-content>
-      <ion-list>
-        <ion-item (click)="handleMenuOption('Option 1')">Option 1</ion-item>
-        <ion-item (click)="handleMenuOption('Option 2')">Option 2</ion-item>
-        <ion-item (click)="handleMenuOption('Option 3')">Option 3</ion-item>
-      </ion-list>
-    </ion-content>
-  </ion-menu>
-  
-</ion-header>
+    <ion-toolbar>
+      <div class="ion-page" id="main-content">
+      <ion-buttons slot="end">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+    </div>
+      <ion-title>@hichamtalib7</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+
 
 <ion-content>
 
@@ -44,6 +43,7 @@
         <p>Photos</p>
       </ion-col>
       <ion-col>
+        
         <h6>860</h6>
         <p>Friends</p>
       </ion-col>
@@ -62,3 +62,4 @@
   </ion-grid>
 
 </ion-content>
+
