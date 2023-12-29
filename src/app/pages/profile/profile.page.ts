@@ -1,3 +1,4 @@
+import { FriendsPage } from './../friends/friends.page';
 import { Component, OnInit } from '@angular/core';
 
 import { ApiService } from '../../services/api.service';
@@ -9,12 +10,15 @@ import { ApiService } from '../../services/api.service';
 })
 export class ProfilePage implements OnInit {
   
+  component = FriendsPage;
   friends: any;
 
   constructor(
-    private apiService: ApiService
+    private apiService: ApiService,
+    
   ) { }
 
+ 
   ngOnInit() {
     this.loadPhotos();
   }
@@ -23,7 +27,7 @@ export class ProfilePage implements OnInit {
     this.apiService.getFriends().then(result => {
         this.friends = result;
     }).catch(error => {
-        console.log('getFriends error', error);
+        console.log('getFriends and pictures error', error);
     });
   }
 
