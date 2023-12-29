@@ -6,7 +6,8 @@ import { FeedPage } from './feed.page';
 const routes: Routes = [
   {
     path: '',
-    component: FeedPage
+    component: FeedPage,
+    
   }
 ];
 
