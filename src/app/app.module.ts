@@ -10,6 +10,8 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { SettingsPageModule } from './pages/settings/settings.module'; // Import SettingsPageModule
+
 
 @NgModule({
   declarations: [AppComponent],
@@ -19,6 +21,7 @@ import { AppComponent } from './app.component';
     FormsModule,
     AppRoutingModule,
     HttpClientModule,
+    SettingsPageModule,
     IonicModule.forRoot()
   ],
   providers: [
