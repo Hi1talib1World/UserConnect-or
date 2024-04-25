@@ -1,0 +1,26 @@
+page-login {
+    ion-content {
+      --background: #f4f4f4; /* Setting background color for the content area */
+    }
+  
+    form {
+      ion-item {
+        --background: transparent; /* Making the item background transparent */
+        margin-bottom: 20px; /* Adding margin between items */
+      }
+  
+      ion-label {
+        color: #333; /* Setting label color */
+      }
+  
+      ion-input {
+        border-color: #ccc; /* Setting input border color */
+      }
+  
+      ion-button {
+        --background: #007bff; /* Setting button background color */
+        --color: #fff; /* Setting button text color */
+      }
+    }
+  }
+  
