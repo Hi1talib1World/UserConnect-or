@@ -24,8 +24,8 @@ To get started with UserConnect, follow these steps:
 
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/yourusername/userconnect.git
-    cd userconnect
+    git clone https://github.com/Hi1talib1World/UserConnect-or.git
+    cd userconnect-or
     ```
 
 2. **Install dependencies:**
